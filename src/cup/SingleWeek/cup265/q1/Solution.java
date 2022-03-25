@@ -1,0 +1,15 @@
+package cup.SingleWeek.cup265.q1;
+
+/**
+ * @author 1iin
+ */
+public class Solution {
+    public int smallestEqual(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            if (i % 10 == nums[i]) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
